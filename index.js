@@ -49,10 +49,9 @@ const getComputedDims = (width, height, trim) => {
 /**
  * Creates a PNG from an SVG with rendering based on passed options.
  *
- * @param {String} src - Path to source SVG file
- * @param {String} dest - Path to save generated PNG
+ * @param {String} svg - source SVG code
  * @param {Object} options - Rendering options
- * @return {String} - Path to generated PNG
+ * @return {Buffer} - generated PNG
  */
 const convertSvgToPng = async (svg, options) => {
 	// Merge passed options with defaults
